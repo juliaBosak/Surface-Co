@@ -1,0 +1,39 @@
+@import 'services/_media.sass'
+html, body 
+	width: 100%
+	height: 100%
+	font-size: 14px
+.container 
+	width: 100%
+	height: 100%
+	margin-right: auto
+	margin-left: auto
+	position: relative
+	display: flex
+	justify-content: center
+	align-items: center
+a:hover, button:hover, input:hover
+	cursor: pointer
+	cursor: url(/img/Cursor.png), pointer
+@include for-extra-small 
+	.container
+		max-width: auto
+@include for-small
+	.container
+		max-width: 760px
+@include for-medium
+	.container
+		max-width: 970px
+@include for-large
+	.container
+		max-width: 1170px
+@import 'services/reset'
+@import 'services/variables'
+@import 'horizontal-memu/horizontal-menu.sass'
+@import 'social/social.sass'
+@import 'mobile-menu/_mobileNav.sass'
+@import 'header/header'
+@import 'surfing/surfing'
+@import 'boards/boards'
+
+

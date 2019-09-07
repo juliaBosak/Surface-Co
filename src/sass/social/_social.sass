@@ -1,0 +1,24 @@
+.social
+	max-width: 128px
+	display: flex
+	justify-content: space-between
+	&__icon
+		width: 36px
+		height: 36px
+		background: #000000 url(/img/social-icons.svg) no-repeat
+		border-radius: 100%
+		display: inline-block
+		&:hover, &:not(:hover)
+			transition: background-color .4s
+		&.facebook
+			background-position: 14px 10px
+			&:hover
+				background-color: $facebook-icon-hover
+		&.instagram
+			background-position: -32px 10px
+			&:hover
+				background-color: $instagram-icon-hover
+		&.email
+			background-position: -78px 10px
+			&:hover
+				background-color: $email-icon-hover
