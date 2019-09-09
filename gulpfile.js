@@ -8,7 +8,8 @@ var concatCSS = require('gulp-concat-css');
 gulp.task('serve', ['sass'], function() {
 
     browserSync.init({
-        server: "./src"
+        server: "./src",
+        host: "0.0.0.0"
     });
 
     gulp.watch("./src/sass/*.sass", ['sass']).on('change', browserSync.reload);

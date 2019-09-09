@@ -1,20 +1,19 @@
-@import 'services/_media.sass'
 html, body 
 	width: 100%
 	height: 100%
 	font-size: 14px
 .container 
 	width: 100%
-	height: 100%
 	margin-right: auto
 	margin-left: auto
-	position: relative
+.content-center
 	display: flex
 	justify-content: center
 	align-items: center
 a:hover, button:hover, input:hover
 	cursor: pointer
 	cursor: url(/img/Cursor.png), pointer
+@import 'services/_media.sass'
 @include for-extra-small 
 	.container
 		max-width: auto
@@ -29,10 +28,20 @@ a:hover, button:hover, input:hover
 		max-width: 1170px
 @import 'services/reset'
 @import 'services/variables'
-@import 'horizontal-memu/horizontal-menu.sass'
-@import 'social/social.sass'
-@import 'mobile-menu/_mobileNav.sass'
-@import 'header/header'
+@import 'components/horizontal-menu'
+@import 'components/social'
+@import 'components/mobileNav'
+@import 'components/header'
+@import 'components/slider-img'
+@import 'components/h2-title'
+@import 'components/mark'
+@import 'components/tabs'
+@import 'components/standard-button'
+@import 'components/link'
+@import 'components/price'
+@import 'components/subtitle'
+@import 'components/counter'
+@import 'components/slider-buttons'
 @import 'surfing/surfing'
 @import 'boards/boards'
 
