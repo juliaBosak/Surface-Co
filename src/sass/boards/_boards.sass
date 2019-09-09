@@ -1,0 +1,144 @@
+.board
+	width: 100%
+	height: 600px
+	position: relative
+	background-color: #ffffff
+	color: #000
+	box-shadow: 0 -8px 30px rgba(0, 0, 0, 0.34)
+	margin: 0
+	display: flex
+	align-items: center
+	&::before
+		content: ''
+		position: absolute
+		left: 0
+		width: 0
+		border-top: 600px solid #00d2ff
+		border-right: 500px solid transparent
+	&__content 
+		display: flex
+		justify-content: space-around
+		font-size: 12px
+	&__title
+		position: absolute
+		right: 0
+		top: 10px
+		writing-mode: vertical-rl
+		height: 100%
+		line-height: 83px
+		letter-spacing: 13.7px
+		font-size: 10.6em
+		transform: scale(-1, -1)
+	&__counter
+		position: absolute
+		right: 0
+		top: 14.7%
+	&__buttons
+		position: absolute
+		z-index: 2
+		right: -38px
+		top: 8.3%
+	&__img
+		flex-basis: 51%
+		display: flex
+		justify-content: space-around
+	&__big-img
+		flex-basis: 77.75%
+	&__thumbs
+		flex-basis: 13%
+	&__thumb
+		margin-bottom: 3px
+	&__text-content 
+		flex-basis: 45%
+		position: relative
+	&__subtitle
+		font-size: 1.67em
+	&__mark
+		margin-top: 13px
+		margin-bottom: 41px
+	&__description-titles
+		margin-bottom: 27px
+	&__description-title
+		margin-right: 28px
+		padding-bottom: 10px
+		transition: .2s
+		font-size: 1.17em
+	&__description-text
+		font-size: 1.33em
+	&__price
+		margin-top: 47px
+		margin-right: 29px
+	&__button
+		display: inline-block
+		margin-top: 36px
+	&__more
+		margin-top: 96px
+//adaptive
+@include for-large 
+	.board 
+		width: 1030px
+		&__img
+			flex-basis: 51.94%
+		&__text-content 
+			flex-basis: 41.65%	
+@include for-medium
+	.board
+		width: calc(100% - 60px)
+		&__img
+@include for-small
+.board
+	&__img
+		flex-basis: 48%
+	&__big-img
+		flex-basis: 81.75%
+	&__buttons
+		right: 0
+	&__more
+		margin-top: 80px
+	&__title
+		line-height: normal
+	&__description-title
+		margin-right: 15px
+@include for-extra-small
+	.board
+		height: auto
+		box-shadow: none
+		&::before
+			border-top: 0
+			border-right: 0
+		&__title
+			line-height: normal
+			overflow: hidden
+			width: 120px
+		&__content
+			width: 100%
+			height: 100%
+			flex-direction: column
+			justify-content: center
+			align-items: center
+			padding-right: 5px
+			padding-left: 5px
+		&__buttons
+			top: 93%
+		&__counter
+			top: 90%
+		&__description-title
+			margin-right: 5px
+		&__img
+			max-width: 463px
+		&__text-content 
+			max-width: 398px
+		&__subtitle,
+		&__more
+			text-align: center
+
+
+
+
+
+
+
+
+
+
+
