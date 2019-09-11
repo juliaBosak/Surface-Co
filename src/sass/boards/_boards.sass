@@ -6,8 +6,7 @@
 	color: #000
 	box-shadow: 0 -8px 30px rgba(0, 0, 0, 0.34)
 	margin: 0
-	display: flex
-	align-items: center
+	font-size: 12px
 	&::before
 		content: ''
 		position: absolute
@@ -16,8 +15,6 @@
 		border-top: 600px solid #00d2ff
 		border-right: 500px solid transparent
 	&__content 
-		display: flex
-		justify-content: space-around
 		font-size: 12px
 	&__title
 		position: absolute
@@ -31,19 +28,21 @@
 		transform: scale(-1, -1)
 	&__counter
 		position: absolute
+		z-index: 2
 		right: 0
-		top: 14.7%
+		top: 88px
 	&__buttons
 		position: absolute
 		z-index: 2
 		right: -38px
-		top: 8.3%
+		top: 50px
 	&__img
 		flex-basis: 51%
 		display: flex
 		justify-content: space-around
 	&__big-img
 		flex-basis: 77.75%
+		text-align: center
 	&__thumbs
 		flex-basis: 13%
 	&__thumb
@@ -53,18 +52,27 @@
 		position: relative
 	&__subtitle
 		font-size: 1.67em
+		line-height: 1.3em
+		max-height: 5.1em
+		-moz-hyphens: auto
+		text-overflow: ellipsis
+		word-wrap: break-word
+		overflow: hidden
 	&__mark
 		margin-top: 13px
 		margin-bottom: 41px
 	&__description-titles
 		margin-bottom: 27px
+		display: flex
+		justify-content: space-around
 	&__description-title
-		margin-right: 28px
 		padding-bottom: 10px
 		transition: .2s
 		font-size: 1.17em
 	&__description-text
 		font-size: 1.33em
+		height: 10em
+		line-height: 1.5em
 	&__price
 		margin-top: 47px
 		margin-right: 29px
@@ -86,19 +94,21 @@
 		width: calc(100% - 60px)
 		&__img
 @include for-small
-.board
-	&__img
-		flex-basis: 48%
-	&__big-img
-		flex-basis: 81.75%
-	&__buttons
-		right: 0
-	&__more
-		margin-top: 80px
-	&__title
-		line-height: normal
-	&__description-title
-		margin-right: 15px
+	.board
+		&__img
+			flex-basis: 48%
+		&__big-img
+			flex-basis: 81.75%
+		&__buttons
+			right: 0
+		&__more
+			margin-top: 80px
+		&__title
+			line-height: normal
+		&__subtitle
+			margin-right: 65px
+		&__description-title
+			margin-right: 15px
 @include for-extra-small
 	.board
 		height: auto
@@ -106,31 +116,35 @@
 		&::before
 			border-top: 0
 			border-right: 0
+		&__text-content 
+			margin-top: 40px
+			padding-right: 10px
+			padding-left: 10px
 		&__title
 			line-height: normal
 			overflow: hidden
 			width: 120px
-		&__content
-			width: 100%
-			height: 100%
-			flex-direction: column
-			justify-content: center
-			align-items: center
-			padding-right: 5px
-			padding-left: 5px
 		&__buttons
-			top: 93%
+			right: 0
+			top: 375px
 		&__counter
-			top: 90%
+			top: 375px
+			right: 76px
 		&__description-title
-			margin-right: 5px
+			font-size: 1em
 		&__img
 			max-width: 463px
+			height: 375px
+			flex-basis: auto
+		&__big-img
+			flex-basis: 65.75%
 		&__text-content 
 			max-width: 398px
 		&__subtitle,
 		&__more
 			text-align: center
+		&__more
+			margin-top: 50px
 
 
 
