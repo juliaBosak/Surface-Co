@@ -1,32 +1,13 @@
 .tabs
-	font-family: Raleway, sans-serif
-	width: 100%
-	max-width: 375px
-	&__titles
-		width: 100%
-		position: relative
-		&::after
-			content: ''
-			position: absolute
-			bottom: 0
-			left: 0
-			width: 100%
-			border-bottom: 1px solid #d9d9d9
-	&__title
-		display: inline-block
-		font:
-			size: 14px
-			weight: 700
-		color: #a0a0a0
-		text-transform: uppercase
-		letter-spacing: 0.7px
-		border-bottom: 3px solid transparent
-		&:hover
-			color: #000000
-			border-bottom: 3px solid #00b0ff
-	&__description
-		max-width: 389px
-	&__description-text
-		color: #787878
-		font-size: 16px
-		line-height: 24px
+	&__description-content
+		display: none
+		animation: fade
+		animation-duration: 1.5s
+		&.active
+			display: block
+@keyframes fade
+	from 
+		opacity: 0
+	to 
+		opacity: 1
+

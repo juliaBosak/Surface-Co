@@ -18,7 +18,7 @@
 }
 @font-face {
   font-family: "Playfair Display";
-  src: url("/fonts/PlayfairDisplay-RegularItalic.ttf") format("ttf");
+  src: url("/fonts/PlayfairDisplay-Italic.otf") format("otf");
   font-weight: 400;
   font-style: italic;
 }

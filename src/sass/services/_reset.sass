@@ -34,6 +34,9 @@ button
 	padding: 0
 	&:active
 	color: black
+button:focus, a:focus
+	-webkit-tap-highlight-color: rgba(0,0,0,0)
+	-webkit-tap-highlight-color: transparent /* For some Androids */
 a
 	text-decoration: none
 	color: black
