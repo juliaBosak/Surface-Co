@@ -1,11 +1,5 @@
 @font-face {
   font-family: "Montserrat";
-  src: url("/fonts/Montserrat-Bold.ttf") format("ttf");
-  font-weight: bold;
-  font-style: normal;
-}
-@font-face {
-  font-family: "Montserrat";
   src: url("/fonts/Montserrat-SemiBold") format("ttf");
   font-weight: 600;
   font-style: normal;
@@ -17,10 +11,10 @@
   font-style: normal;
 }
 @font-face {
-  font-family: "Playfair Display";
-  src: url("/fonts/PlayfairDisplay-Italic.otf") format("otf");
-  font-weight: 400;
+  font-family: 'Playfair Display';
   font-style: italic;
+  font-weight: 400;
+  src: local('Playfair Display Italic'), local('PlayfairDisplay-Italic'), url(https://fonts.gstatic.com/s/playfairdisplay/v15/nuFkD-vYSZviVYUb_rj3ij__anPXDTnogkk7yRZrPA.woff2) format('woff2');
 }
 @font-face {
   font-family: "Raleway";

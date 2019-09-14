@@ -1,8 +1,10 @@
 html,
-body {
+body,
+main {
   width: 100%;
   height: 100%;
   font-size: 14px;
+  box-sizing: border-box;
 }
 
 .container {
@@ -30,8 +32,13 @@ img {
 }
 
 @media (max-width: 767px) {
+  .padding-rl-10 {
+    padding-right: 10px;
+    padding-left: 10px;
+  }
+
   .container {
-    max-width: auto;
+    width: auto;
   }
 }
 
@@ -493,6 +500,30 @@ a {
   font-size: 190px;
 }
 
+.big-title {
+  font-size: 193px;
+  letter-spacing: 19.6px;
+}
+
+@media (max-width: 767px) {
+  .big-title {
+    font-size: 58px;
+    letter-spacing: 1px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .big-title {
+    font-size: 100px;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+  .big-title {
+    font-size: 155px;
+  }
+}
+
 .mark {
   font-size: 12px;
   font-family: 'Montserrat', sans-serif;
@@ -590,7 +621,7 @@ a {
   font-weight: 700;
 }
 
-.subtitle {
+.description-title {
   color: #000000;
   font-family: 'Montserrat', sans-serif;
   font-size: 20px;
@@ -734,7 +765,7 @@ a {
 .surfing_background {
   margin-bottom: -270px;
   width: 100%;
-  height: 64.815%;
+  height: 700px;
   background: url("../../../../../img/surfing/background.png") center no-repeat;
   background-size: cover;
   position: relative;
@@ -914,7 +945,7 @@ a {
   position: relative;
 }
 
-.board__subtitle {
+.board__text-content-title {
   font-size: 1.67em;
   line-height: 1.3em;
   max-height: 5.1em;
@@ -1002,7 +1033,7 @@ a {
     line-height: normal;
   }
 
-  .board__subtitle {
+  .board__text-content-title {
     margin-right: 65px;
   }
 
@@ -1024,8 +1055,6 @@ a {
 
   .board__text-content {
     margin-top: 40px;
-    padding-right: 10px;
-    padding-left: 10px;
   }
 
   .board__title {
@@ -1073,5 +1102,283 @@ a {
 
   .board__more {
     margin-top: 50px;
+  }
+}
+
+.about-us {
+  margin-top: 176px;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 16px;
+  color: #000000;
+  position: relative;
+  margin-bottom: 54px;
+}
+
+.about-us_cover {
+  width: 100vw;
+  left: calc(-50vw + 50%);
+  height: 640px;
+  background: url("../../../../../img/About-us/background.png") center no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.about-us_cover:before {
+  position: absolute;
+  content: '';
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(to top, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0) 100%);
+}
+
+.about-us__title {
+  text-align: center;
+}
+
+.about-us__content {
+  display: flex;
+  justify-content: space-around;
+}
+
+.about-us__description-wrap {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff;
+}
+
+.about-us__description {
+  max-width: 341px;
+}
+
+.about-us__description-title {
+  text-align: center;
+  margin-bottom: 19px;
+}
+
+.about-us .description-title {
+  font-size: 1.125em;
+  text-transform: uppercase;
+  letter-spacing: 2.52px;
+}
+
+.about-us__description-separator {
+  text-align: center;
+  margin-bottom: 34px;
+}
+
+.about-us__text {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.375em;
+  font-style: italic;
+  line-height: 38px;
+  overflow: hidden;
+}
+
+.about-us__more {
+  display: inline-block;
+  margin-top: 33px;
+}
+
+.about-us__video-wrap {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.about-us__video {
+  position: relative;
+  height: 300px;
+  box-shadow: 20px 35px 50px rgba(0, 0, 0, 0.2);
+}
+
+.about-us__video:before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: url("../../../../../img/About-us/Photo.png") center no-repeat;
+  background-size: cover;
+}
+
+.about-us__video:after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  background: #000000;
+  opacity: 0.1;
+}
+
+.about-us__iframe {
+  width: 500px;
+  height: 300px;
+}
+
+.about-us__play-video {
+  position: absolute;
+  z-index: 2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 140px;
+  height: 140px;
+  border: 1px solid #ffffff;
+  border-radius: 50%;
+  opacity: 0.7;
+  bottom: 25%;
+  left: 38%;
+}
+
+.about-us__play-button {
+  position: relative;
+  width: 90px;
+  height: 90px;
+  background-color: #ffffff;
+  background: url("../../../../../img/About-us/Play_icon.svg") center no-repeat;
+  background-size: cover;
+}
+
+@media (max-width: 767px) {
+  .about-us {
+    margin-top: 60px;
+  }
+
+  .about-us_cover {
+    display: none;
+  }
+
+  .about-us__content {
+    flex-direction: column;
+  }
+
+  .about-us__description {
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+
+  .about-us__description-separator {
+    margin-bottom: 20px;
+  }
+
+  .about-us__video {
+    height: 193px;
+  }
+
+  .about-us__iframe {
+    max-width: 341px;
+    height: 193px;
+  }
+
+  .about-us__play-video {
+    bottom: 15%;
+    left: 30%;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .about-us {
+    margin-top: 60px;
+  }
+
+  .about-us_cover {
+    display: none;
+  }
+
+  .about-us__content {
+    margin-top: 20px;
+  }
+
+  .about-us__description-wrap {
+    flex-basis: 47%;
+  }
+
+  .about-us__description {
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+
+  .about-us__description-separator {
+    margin-bottom: 20px;
+  }
+
+  .about-us__video-wrap {
+    flex-basis: 47%;
+  }
+
+  .about-us__video {
+    width: 100%;
+    height: 193px;
+  }
+
+  .about-us__play-video {
+    bottom: 15%;
+    left: 30%;
+  }
+
+  .about-us__iframe {
+    width: 100%;
+    height: 194px;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+  .about-us__title {
+    margin-bottom: -45px;
+  }
+
+  .about-us__content {
+    justify-content: flex-end;
+    margin-top: -344px;
+    position: relative;
+  }
+
+  .about-us__video-wrap {
+    flex: 0 0 50%;
+    justify-content: flex-end;
+    align-items: flex-end;
+  }
+
+  .about-us__video {
+    margin-bottom: -54px;
+  }
+
+  .about-us__description-wrap {
+    flex: 0 0 51%;
+    justify-content: flex-end;
+    padding-top: 5.21%;
+    padding-right: 6.77%;
+    padding-left: 25%;
+  }
+}
+
+@media (min-width: 1200px) {
+  .about-us__title {
+    margin-bottom: -45px;
+  }
+
+  .about-us__content {
+    justify-content: flex-end;
+    margin-top: -344px;
+    position: relative;
+  }
+
+  .about-us__video-wrap {
+    flex: 0 0 50%;
+    justify-content: flex-end;
+    align-items: flex-end;
+  }
+
+  .about-us__video {
+    margin-bottom: -54px;
+  }
+
+  .about-us__description-wrap {
+    flex: 0 0 51%;
+    justify-content: flex-end;
+    padding-top: 5.21%;
+    padding-right: 6.77%;
+    padding-left: 25%;
   }
 }
