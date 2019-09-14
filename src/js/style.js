@@ -30,18 +30,3 @@ boardPrev.addEventListener('click', () => {
 		}
 	}
 }) ();
-
-(function() {
-	const 
-		videoButton = document.getElementById('about-us_video-button'),
-		video = document.getElementById('about-us_video');
-
-		videoButton.addEventListener('click', () => {
-			video.style.position = 'relative';
-			video.style.zIndex = '3';
-			video.setAttribute('play', '')
-		})
-
-		
-}) ();
-
