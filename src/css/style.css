@@ -945,7 +945,7 @@ a {
   position: relative;
 }
 
-.board__subtitle {
+.board__text-content-title {
   font-size: 1.67em;
   line-height: 1.3em;
   max-height: 5.1em;
@@ -1033,7 +1033,7 @@ a {
     line-height: normal;
   }
 
-  .board__subtitle {
+  .board__text-content-title {
     margin-right: 65px;
   }
 
@@ -1097,7 +1097,7 @@ a {
     max-width: 398px;
   }
 
-  .board__subtitle,
+  .board__text-content-title,
   .board__more {
     text-align: center;
   }
