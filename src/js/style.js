@@ -39,7 +39,6 @@ boardPrev.addEventListener('click', () => {
 		videoButton.addEventListener('click', () => {
 			video.style.position = 'relative';
 			video.style.zIndex = '3';
-			video.setAttribute('play', '')
 		})
 
 		
