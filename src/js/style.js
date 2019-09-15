@@ -30,7 +30,6 @@ boardPrev.addEventListener('click', () => {
 		}
 	}
 }) ();
-
 (function() {
 	const 
 		videoButton = document.getElementById('about-us_video-button'),
@@ -43,4 +42,3 @@ boardPrev.addEventListener('click', () => {
 
 		
 }) ();
-
