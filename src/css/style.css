@@ -28,7 +28,7 @@ input:hover {
 
 img {
   max-width: 100%;
-  max-height: 100%;
+  height: auto;
 }
 
 @media (max-width: 767px) {
@@ -441,6 +441,10 @@ a {
   align-items: center;
 }
 
+.page-img__big-wrap {
+  max-height: 100%;
+}
+
 .page-img__thumb {
   width: 70px;
   height: 70px;
@@ -448,6 +452,12 @@ a {
   background-color: #ffffff;
   position: relative;
   border: 3px solid transparent;
+  display: flex;
+  justify-content: center;
+}
+
+.page-img__thumb img {
+  max-height: 100%;
 }
 
 .page-img__thumb:before {
@@ -1212,6 +1222,10 @@ a {
 
   .board__big-img {
     flex-basis: 65.75%;
+  }
+
+  .board__big-img img {
+    max-height: 375px;
   }
 
   .board__text-content {
