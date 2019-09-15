@@ -50,7 +50,7 @@
 	&__text-content 
 		flex-basis: 45%
 		position: relative
-	&__subtitle
+	&__text-content-title
 		font-size: 1.67em
 		line-height: 1.3em
 		max-height: 5.1em
@@ -80,6 +80,7 @@
 		display: inline-block
 		margin-top: 36px
 	&__more
+		height: 19px
 		margin-top: 96px
 //adaptive
 @include for-large 
@@ -105,7 +106,7 @@
 			margin-top: 80px
 		&__title
 			line-height: normal
-		&__subtitle
+		&__text-content-title
 			margin-right: 65px
 		&__description-title
 			margin-right: 15px
@@ -138,9 +139,11 @@
 			flex-basis: auto
 		&__big-img
 			flex-basis: 65.75%
+			img 
+				max-height: 375px
 		&__text-content 
 			max-width: 398px
-		&__subtitle,
+		&__text-content-title,
 		&__more
 			text-align: center
 		&__more
