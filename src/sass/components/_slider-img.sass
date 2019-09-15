@@ -24,9 +24,10 @@
 @include for-small
 	.page-img
 		&__thumb
-			border: none
-			&:hover
-				border: 1px solid #00b0ff
-		.tabs__title
-			&.active
-				border: 1px solid #00b0ff
+			&:before
+				border: none
+@include for-extra-small
+	.page-img
+		&__thumb
+			&:before
+				border: none
