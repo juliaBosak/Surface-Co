@@ -22,7 +22,7 @@
 		transition: transform 1s
 		background: rgba(179,231,255, .9)
 		box-shadow: 0 0 10px #ccc
-		color: #646464
+		color: $gray
 		&.mobile-nav_is-opened 
 			transform: translateX(0)
 		&.mobile-nav_is-closed
@@ -30,9 +30,9 @@
 	&__item
 		padding: 10px 0
 		&:hover a
-			color: #00b0ff
+			color: $main-blue
 		a 
-			color: #4d4d4d
+			color: $gray1
 			transition: .3s
 	&__close
 		position: absolute
@@ -42,7 +42,7 @@
 		color: #4d4d4d
 		transition: .3s
 		&:hover
-			color: #00b0ff
+			color: $main-blue
 // adaptive
 @include for-extra-small
 	.mobile-nav
