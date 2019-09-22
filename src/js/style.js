@@ -42,3 +42,19 @@ boardPrev.addEventListener('click', () => {
 		})	
 }) ();
 
+(function() {
+const 
+	ourTeam = document.querySelector('.our-team'),
+	wrap = ourTeam.querySelector('.slider__wrap'),
+	prev = ourTeam.querySelector('.slider__button-prev'),
+	next = ourTeam.querySelector('.slider__button-next'),
+	slider = new Slider(wrap, false);
+
+next.addEventListener('click', () => {
+	slider.slide(1);
+})
+prev.addEventListener('click', () => {
+	slider.slide(-1);
+})
+}) ();
+
