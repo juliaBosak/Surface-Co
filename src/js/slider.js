@@ -7,7 +7,8 @@ class Slider {
 	init() {
 		this.currentSlide = 1;
 		this.sliderBlock = this.wrap.querySelector('.slider');
-		this.slidersCount = this.sliderBlock.children.length;
+		let children = this.sliderBlock.children;
+		this.slidersCount = Math.ceil(children.length/(Math.floor(this.sliderBlock.offsetWidth/children[0].offsetWidth)));
 		if (this.needCounter) {
 			const 
 				counter = this.wrap.querySelector('.slider__counter'),
@@ -16,12 +17,13 @@ class Slider {
 			this.currentSlideBlock.innerHTML = this.currentSlide;
 			slidesAmount.innerHTML = this.slidersCount;
 			window.addEventListener("resize", () => { 
-			this.slide(); 
+				this.slidersCount = Math.ceil(children.length/(Math.floor(this.sliderBlock.offsetWidth/children[0].offsetWidth)));
+				this.slide(); 
 			});
 		}
 	}
 	slide(direction) {
-		this.itemWidth = this.sliderBlock.children[0].offsetWidth;
+		this.itemWidth = this.sliderBlock.offsetWidth;
 		if (direction) {
 			if (direction == 1 && this.currentSlide == this.slidersCount ) {
 				this.sliderBlock.style.left = ''

@@ -4,6 +4,9 @@ main {
   width: 100%;
   height: 100%;
   font-size: 14px;
+}
+
+* {
   box-sizing: border-box;
 }
 
@@ -519,7 +522,7 @@ a {
 
 @media (min-width: 992px) and (max-width: 1199px) {
   .big-title {
-    font-size: 155px;
+    font-size: 152px;
   }
 }
 
@@ -640,6 +643,7 @@ a {
 
 .slider__button {
   display: inline-block;
+  position: relative;
   width: 38px;
   height: 38px;
   background: #f2d800 url("../../../../../img/Board/slider-buttons.svg") no-repeat;
@@ -703,6 +707,75 @@ a {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+  }
+}
+
+.small-item-slider {
+  padding: 25px 0 30px 0;
+  position: relative;
+}
+
+.small-item-slider__wrap {
+  display: flex;
+  justify-content: space-between;
+}
+
+.small-item-slider__content {
+  width: 980px;
+  overflow: hidden;
+}
+
+.small-item-slider__item {
+  flex: 0 0 20%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.small-item-slider__item:nth-child(2n) {
+  position: relative;
+  margin-top: 60px;
+}
+
+.small-item-slider__item:nth-child(n) {
+  margin-left: -20px;
+}
+
+@media (min-width: 1200px) {
+  .small-item-slider {
+    padding: 20px 35px 65px 35px;
+  }
+}
+
+@media (max-width: 767px) {
+  .small-item-slider {
+    flex: 0 0 100%;
+  }
+
+  .small-item-slider__item:nth-child(2n) {
+    margin-top: 0;
+  }
+
+  .small-item-slider__item:nth-child(n) {
+    margin-left: 0;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .small-item-slider {
+    padding: 20px 0 65px 0;
+    flex: 0 0 50%;
+  }
+
+  .small-item-slider__item:nth-child(n) {
+    margin-left: 0;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+  .small-item-slider {
+    flex: 0 0 35%;
+    padding: 20px 0 65px 0;
   }
 }
 
@@ -883,6 +956,100 @@ a {
 .paragraph__more {
   display: inline-block;
   margin-top: 33px;
+}
+
+.slider-card {
+  width: 260px;
+  height: 278px;
+  box-shadow: 10px 17px 50px rgba(0, 0, 0, 0.2);
+  background-color: #ffffff;
+  transition: background .1s;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Raleway', sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.slider-card:hover {
+  background-color: #00b0ff;
+}
+
+.slider-card:hover .slider-card__name {
+  color: #fff;
+}
+
+.slider-card:hover .slider-card__link,
+.slider-card:hover .slider-card__location {
+  color: #b3e7ff;
+}
+
+.slider-card:hover .slider-card__separator {
+  background: url("../../../../../img/Our team/Waves-hover.png") center no-repeat;
+}
+
+.slider-card__img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  margin-bottom: 16px;
+  border: 3px solid #fff;
+}
+
+.slider-card__decsription {
+  text-align: center;
+}
+
+.slider-card__name {
+  color: #00b0ff;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  margin-bottom: 3px;
+}
+
+.slider-card__link-wrap {
+  margin-bottom: 15px;
+}
+
+.slider-card__link {
+  color: #8c8c8c;
+}
+
+.slider-card__separator {
+  width: 31px;
+  height: 6px;
+  background: url("../../../../../img/Our team/Waves.png") center no-repeat;
+  background-size: cover;
+  margin-bottom: 15px;
+  display: inline-block;
+}
+
+.slider-card__location {
+  color: #8c8c8c;
+}
+
+@media (max-width: 767px) {
+  .slider-card {
+    box-shadow: 5px 5px 25px rgba(0, 0, 0, 0.2);
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .slider-card {
+    width: 250px;
+    box-shadow: 10px 10px 40px rgba(0, 0, 0, 0.2);
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+  .slider-card {
+    width: 245px;
+    box-shadow: 10px 8px 20px rgba(0, 0, 0, 0.2);
+  }
 }
 
 .surfing {
@@ -1420,5 +1587,39 @@ a {
     padding-top: 5.21%;
     padding-right: 6.77%;
     padding-left: 25%;
+  }
+}
+
+.our-team {
+  margin-bottom: 50px;
+  font-size: 14px;
+}
+
+.our-team__title {
+  text-align: center;
+}
+
+.our-team__name {
+  font-size: 1.286em;
+}
+
+@media (min-width: 1200px) {
+  .our-team {
+    margin-top: 222px;
+  }
+
+  .our-team__title {
+    margin-bottom: -110px;
+    font-size: 13.5em;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+  .our-team {
+    margin-top: 222px;
+  }
+
+  .our-team__title {
+    margin-bottom: -45px;
   }
 }
