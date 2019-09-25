@@ -1,7 +1,7 @@
 .page-button
 	display: inline-block
-	width: 137px
 	height: 44px
+	padding: 16px 30px
 	color: #ffffff
 	background-color: $main-blue
 	font: 
@@ -13,3 +13,6 @@
 	transition: .2s
 	&:hover
 		background-color: lighten($main-blue, 15%)
+.hide-button
+	@extend .page-button
+	display: none

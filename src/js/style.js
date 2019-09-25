@@ -57,4 +57,21 @@ prev.addEventListener('click', () => {
 	slider.slide(-1);
 })
 }) ();
+(function() {
+const 
+	blogBlock = document.querySelector('.blog'),
+	moreButton = blogBlock.querySelector('.page-button'),
+	hideButton = blogBlock.querySelector('.hide-button'),
+	breakpoints = [870, 570, 270],
+	countForBreakpoints = [3, 2, 1],
+	showAll = true,
+	blog = new Blog(blogBlock, breakpoints, countForBreakpoints);
+
+moreButton.addEventListener('click', () => {
+	blog.showPosts();
+})
+hideButton.addEventListener('click', () => {
+	blog.hidePosts();
+})
+}) ();
 
