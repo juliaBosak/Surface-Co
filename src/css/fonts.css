@@ -28,3 +28,9 @@
   font-weight: 700;
   font-style: normal;
 }
+@font-face {
+  font-family: "RobotoCondensed";
+  src: url("/fonts/RobotoCondensed-Bold.ttf") format("ttf");
+  font-weight: 700;
+  font-style: normal;
+}
