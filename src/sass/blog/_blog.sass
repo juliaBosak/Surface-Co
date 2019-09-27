@@ -1,11 +1,11 @@
 .blog 
-	margin-top: 180px
-	display: flex
-	flex-direction: column
-	align-items: center
-	font-family: Raleway, sans-serif
-	font-weight: 400
-	font-size: 16px
+	&__content
+		display: flex
+		flex-direction: column
+		align-items: center
+		font-family: Raleway, sans-serif
+		font-weight: 400
+		font-size: 16px
 	.paragraph
 		max-width: 100%
 	&__description
@@ -22,7 +22,7 @@
 		width: 270px
 		height: 344px
 		background-color: #ffffff
-		margin-bottom: 30px
+		margin-bottom: 40px
 		&:hover
 			box-shadow: 0 2px 30px rgba(0, 0, 0, 0.2)
 			.blog__post-paragraph
@@ -51,8 +51,6 @@
 		color: $main-gray
 		line-height: 1.5em
 		height: 6em
-	&__button
-		margin-top: 40px
 
 
 @include for-extra-small

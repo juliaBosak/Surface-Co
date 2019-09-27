@@ -1,3 +1,4 @@
+@import 'services/_media.sass'
 html, body, main
 	width: 100%
 	height: 100%
@@ -18,7 +19,15 @@ a:hover, button:hover, input:hover
 img 
 	max-width: 100%
 	height: auto
-@import 'services/_media.sass'
+.margin-t-180
+	margin-top: 180px
+@include for-extra-small
+	.margin-t-180 
+		margin-top: 60px
+@include for-small 
+	.margin-t-180 
+		margin-top: 60px
+
 @include for-extra-small 
 	.padding-rl-10
 		padding-right: 10px
