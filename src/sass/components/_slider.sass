@@ -38,45 +38,80 @@
 	position: relative
 	&__wrap
 		display: flex
-		justify-content: space-between
+		justify-content: center
+		align-items: center
 	&__content
-		width: 980px
 		overflow: hidden
+		flex-basis: 95%
 	&__item
-		flex: 0 0 20%
+		flex-basis: 25%
 		&:nth-child(2n)
 			position: relative
 			margin-top: 60px
-		&:nth-child(n)
-			margin-left: -20px
 		display: flex
 		justify-content: center
 		align-items: center
-@include for-large
-	.small-item-slider
-		padding: 20px 35px 65px 35px
+	&__button
+		width: 51px
+		height: 50px
+		box-shadow: 0 0 10px rgba(0, 0, 0, 0.16)
+		border: 1px solid #e6e6e6
+		background-color: #fff
+		background-image: none
+		border-radius: 50%
+		text-align: center
+		transition: all .3s
+		&:hover
+			background-color: $sky-blue
+			.small-item-slider__svg path
+				fill: #fff
+	&__svg
+		margin-top: 16px
 
 @include for-extra-small
 	.small-item-slider
-		flex: 0 0 100%
+		&__wrap
+			position: relative
 		&__item
+			flex-basis: 100%
 			&:nth-child(2n)
 				margin-top: 0
-			&:nth-child(n)
-				margin-left: 0
+		&__button
+			position: absolute
+			z-index: 2
+			&.slider__button-prev
+				right: 80%
+			&.slider__button-next
+				left: 80%
 @include for-small
 	.small-item-slider
-		padding: 20px 0 65px 0
-		flex: 0 0 50%
+		&__content
+			max-width: 600px
 		&__item
+			flex-basis: 50%
 			&:nth-child(n)
-				margin-left: 0
+				justify-content: flex-end
+			&:nth-child(2n)
+				justify-content: flex-start
 
 @include for-medium
 	.small-item-slider
-		flex: 0 0 35%
-		padding: 20px 0 65px 0
+		&__content
+			max-width: 900px
 		&__item
+			flex-basis: 33.3%
+@include for-large
+	.small-item-slider
+		&__wrap
+			position: relative
+		&__button
+			position: absolute
+			z-index: 2
+			&.slider__button-prev
+				left: 10px
+			&.slider__button-next
+				right: 10px
+
 
 
 

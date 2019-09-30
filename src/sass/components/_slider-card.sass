@@ -1,7 +1,7 @@
 .slider-card 
 	width: 260px
 	height: 278px
-	box-shadow: 10px 17px 50px rgba(0, 0, 0, 0.2)
+	box-shadow: 2px 5px 10px rgba(0, 0, 0, 0.2)
 	background-color: #ffffff
 	transition: background .1s
 	border-radius: 5px
@@ -20,7 +20,9 @@
 		.slider-card__link, .slider-card__location
 			color: #b3e7ff
 		.slider-card__separator
-			background: url('/img/Our team/Waves-hover.png') center no-repeat
+			background: url('../img/Our team/Waves-hover.png') center no-repeat
+		.slider-card__location-svg path 
+			fill: #b3e7ff
 	&__img
 		width: 100px	
 		height: 100px
@@ -43,22 +45,12 @@
 	&__separator
 		width: 31px
 		height: 6px
-		background: url('/img/Our team/Waves.png') center no-repeat
+		background: url('../img/Our team/Waves.png') center no-repeat
 		background-size: cover
 		margin-bottom: 15px
 		display: inline-block
 	&__location
 		color: $gray4
 
-@include for-extra-small
-	.slider-card 
-		box-shadow: 5px 5px 25px rgba(0, 0, 0, 0.2)
-@include for-small
-	.slider-card 
-		width: 250px
-		box-shadow: 10px 10px 40px rgba(0, 0, 0, 0.2)
-@include for-medium
-	.slider-card 
-		width: 245px
-		box-shadow: 10px 8px 20px rgba(0, 0, 0, 0.2)
+
 
