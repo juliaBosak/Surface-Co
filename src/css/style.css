@@ -933,6 +933,7 @@ a {
 
 .video {
   position: relative;
+  width: 500px;
   height: 300px;
   box-shadow: 20px 35px 50px rgba(0, 0, 0, 0.2);
 }
@@ -1795,10 +1796,6 @@ a {
 
   .about-us__video-wrap {
     flex: 1 0 40%;
-  }
-
-  .about-us__iframe {
-    width: 450px;
   }
 }
 
