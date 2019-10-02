@@ -1,0 +1,82 @@
+@import 'services/_media.sass'
+html, body, main
+	width: 100%
+	height: 100%
+main
+	font-size: 14px
+	font-family: 'Raleway', 'Montserrat', 'RobotoCondensed', 'Playfair Display', sans-serif
+*
+	box-sizing: border-box
+.container 
+	width: 100%
+	margin-right: auto
+	margin-left: auto
+.content-center
+	display: flex
+	justify-content: center
+	align-items: center
+a:hover, button:hover, input:hover
+	cursor: pointer
+	cursor: url('../img/Cursor.png'), pointer
+img 
+	max-width: 100%
+	height: auto
+.margin-t-180
+	margin-top: 180px
+@include for-extra-small
+	.margin-t-180 
+		margin-top: 60px
+@include for-small 
+	.margin-t-180 
+		margin-top: 60px
+
+@include for-extra-small 
+	.padding-rl-10
+		padding-right: 10px
+		padding-left: 10px
+	.container
+		width: auto
+@include for-small
+	.container
+		max-width: 760px
+@include for-medium
+	.container
+		max-width: 970px
+@include for-large
+	.container
+		max-width: 1170px
+
+
+@import 'services/reset'
+@import 'services/variables'
+@import 'components/horizontal-menu'
+@import 'components/social'
+@import 'components/mobileNav'
+@import 'components/header'
+@import 'components/slider-img'
+@import 'components/h2-title'
+@import 'components/mark'
+@import 'components/tabs'
+@import 'components/standard-button'
+@import 'components/link'
+@import 'components/price'
+@import 'components/description-title'
+@import 'components/slider-buttons'
+@import 'components/slider'
+@import 'components/tabs-text'
+@import 'components/video'
+@import 'components/paragraph'
+@import 'components/slider-card'
+@import 'components/instagram'
+@import 'components/facebook'
+@import 'surfing/surfing'
+@import 'boards/boards'
+@import 'about-us/about-us'
+@import 'our-team/our-team'
+@import 'blog/blog'
+@import 'social-networks/social-networks'
+@import 'footer/footer'
+
+
+
+

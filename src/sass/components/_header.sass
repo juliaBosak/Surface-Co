@@ -1,0 +1,49 @@
+.page-header
+	width: 100%
+	position: absolute
+	display: flex 
+	justify-content: space-between 
+	align-items: center 
+	font-family: 'Montserrat', sans-serif
+	font-size: 14px
+	&__logo 
+		color: #000000 
+		font-size: 34px 
+		font-weight: 700 
+		letter-spacing: -1.35px 
+		line-height: 27px
+	&__menu 
+		flex-basis: 45.47%
+	&__social
+		flex-basis: 10.94%
+
+//adaptive
+@include for-extra-small 
+	.page-header
+		max-width: auto
+		justify-content: space-around
+		&__menu
+			display: none
+		&__logo
+			font-size: 28px
+		&__social
+			flex-basis: 22%
+@include for-small
+	.page-header
+		max-width: 760px
+		justify-content: space-around
+		&__logo
+			font-size: 30px
+		&__social
+			display: none
+@include for-medium
+	.page-header
+		max-width: 970px
+		&__social
+			flex-basis: 13%
+		&__menu 
+			flex-basis: 54%
+@include for-large
+	.page-header
+		max-width: 1170px
+

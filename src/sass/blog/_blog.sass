@@ -1,0 +1,91 @@
+.blog 
+	&__content
+		display: flex
+		flex-direction: column
+		align-items: center
+		font-family: Raleway, sans-serif
+		font-weight: 400
+		font-size: 16px
+	.paragraph
+		max-width: 100%
+	&__description
+		text-align: center
+	&__title
+		font-size: 1.125em
+	&__posts
+		width: 870px
+		display: flex
+		flex-wrap: wrap
+		justify-content: space-between
+	&__post
+		flex-basis: 31%
+		width: 270px
+		height: 344px
+		background-color: #ffffff
+		margin-bottom: 40px
+		&:hover
+			box-shadow: 0 2px 30px rgba(0, 0, 0, 0.2)
+			.blog__post-paragraph
+				color: $dark-blue
+		&.showed
+			display: block
+		&.hidden
+			display: none
+	&__post-img
+		position: relative
+		&:before
+			position: absolute
+			content: ''
+			width: 100%
+			height: 100%
+			background-image: linear-gradient(to top, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0) 100%)
+	&__post-text
+		padding-top: 27px
+		padding-bottom: 26px
+		padding-left: 25px
+	&__post-paragraph
+		max-width: 214px
+		text-overflow: ellipsis
+		word-wrap: break-word
+		overflow: hidden
+		color: $main-gray
+		line-height: 1.5em
+		height: 6em
+
+
+@include for-extra-small
+	.blog
+		&__posts
+			width: 270px
+		&__post
+			flex-basis: 100%
+@include for-small
+	.blog
+		&__posts
+			width: 570px
+		&__post
+			flex-basis: 47.37%
+.fadeInDown
+	animation: fadeInDown
+	animation-duration: 1.5s
+.fadeInUp 
+	animation: fadeInUp
+	animation-duration: 1.5s
+@keyframes fadeInDown 
+	from 
+		opacity: 0
+		transform: translate3d(0, -20%, 0)
+	to 
+		opacity: 1
+		transform: translate3d(0, 0, 0)
+@keyframes fadeInUp 
+	from 
+		opacity: 1
+		transform: translate3d(0, 0, 0)
+	to 
+		opacity: 0
+		transform: translate3d(0, -20%, 0)
+
+
+
+
